@@ -69,11 +69,9 @@ button.del:hover{background:#b51717;}
 <div class="toast-container" id="toastWrap"></div>
 
 <script>
-// ========== 请修改这里 ==========
 const GITHUB_USERNAME = "guyuan0521";
 const GITHUB_REPO = "guyuan";
 const GITHUB_BRANCH = "main";
-// ==============================
 const STORAGE_KEY_TOKEN = "gh_pic_token";
 const API_BASE = "https://api.github.com";
 
@@ -233,7 +231,6 @@ async function handleFiles(files){
     progressBox.innerText="";
 }
 
-// 等待DOM全部解析完成再绑定所有按钮事件
 document.addEventListener('DOMContentLoaded', ()=>{
     const tokenInput = document.getElementById("tokenInput");
     const saveTokenBtn = document.getElementById("saveTokenBtn");
